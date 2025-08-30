@@ -1,0 +1,212 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#1a2332"/>
+  
+  <!-- Grid lines for reference -->
+  <defs>
+    <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#2a3442" stroke-width="1"/>
+    </pattern>
+    
+    <!-- Oak wood grain pattern -->
+    <pattern id="oakWood" width="20" height="15" patternUnits="userSpaceOnUse">
+      <rect width="20" height="15" fill="#8B4513"/>
+      <path d="M0,3 Q5,1 10,3 Q15,5 20,3" stroke="#654321" stroke-width="0.5" fill="none"/>
+      <path d="M0,8 Q3,6 8,8 Q13,10 20,8" stroke="#5D4037" stroke-width="0.3" fill="none"/>
+      <path d="M0,12 Q7,11 12,12 Q17,13 20,12" stroke="#6D4C41" stroke-width="0.4" fill="none"/>
+    </pattern>
+    
+    <!-- Darker oak for hull bottom -->
+    <pattern id="darkOak" width="18" height="12" patternUnits="userSpaceOnUse">
+      <rect width="18" height="12" fill="#654321"/>
+      <path d="M0,2 Q4,1 9,2 Q14,3 18,2" stroke="#4A2C2A" stroke-width="0.4" fill="none"/>
+      <path d="M0,6 Q6,5 12,6 Q16,7 18,6" stroke="#5D4037" stroke-width="0.3" fill="none"/>
+      <path d="M0,9 Q5,8 10,9 Q15,10 18,9" stroke="#3E2723" stroke-width="0.2" fill="none"/>
+    </pattern>
+    
+    <!-- Light oak for interior -->
+    <pattern id="lightOak" width="16" height="10" patternUnits="userSpaceOnUse">
+      <rect width="16" height="10" fill="#A0522D"/>
+      <path d="M0,2 Q4,1 8,2 Q12,3 16,2" stroke="#8B4513" stroke-width="0.3" fill="none"/>
+      <path d="M0,6 Q6,5 10,6 Q14,7 16,6" stroke="#795548" stroke-width="0.2" fill="none"/>
+    </pattern>
+  </defs>
+  
+  <rect width="800" height="400" fill="url(#grid)"/>
+  
+  <!-- Labels -->
+  <text x="50" y="30" fill="#7a8a9a" text-anchor="middle" font-family="Arial, sans-serif" font-size="12">N</text>
+  <text x="150" y="30" fill="#7a8a9a" text-anchor="middle" font-family="Arial, sans-serif" font-size="12">NE</text>
+  <text x="250" y="30" fill="#7a8a9a" text-anchor="middle" font-family="Arial, sans-serif" font-size="12">E</text>
+  <text x="350" y="30" fill="#7a8a9a" text-anchor="middle" font-family="Arial, sans-serif" font-size="12">SE</text>
+  <text x="50" y="230" fill="#7a8a9a" text-anchor="middle" font-family="Arial, sans-serif" font-size="12">S</text>
+  <text x="150" y="230" fill="#7a8a9a" text-anchor="middle" font-family="Arial, sans-serif" font-size="12">SW</text>
+  <text x="250" y="230" fill="#7a8a9a" text-anchor="middle" font-family="Arial, sans-serif" font-size="12">W</text>
+  <text x="350" y="230" fill="#7a8a9a" text-anchor="middle" font-family="Arial, sans-serif" font-size="12">NW</text>
+  
+  <!-- Oak Boat sprites for each direction -->
+  
+  <!-- North (pointing up) -->
+  <g transform="translate(50, 100)">
+    <!-- Hull outline (dark oak) -->
+    <ellipse cx="0" cy="15" rx="13" ry="26" fill="url(#darkOak)" stroke="#3E2723" stroke-width="1"/>
+    <!-- Inner hull (medium oak) -->
+    <ellipse cx="0" cy="12" rx="9" ry="20" fill="url(#oakWood)"/>
+    <!-- Interior (light oak) -->
+    <ellipse cx="0" cy="10" rx="6" ry="15" fill="url(#lightOak)"/>
+    <!-- Oak mast -->
+    <rect x="-1.5" y="-12" width="3" height="18" fill="#654321"/>
+    <!-- Wood grain on mast -->
+    <line x1="-0.5" y1="-12" x2="-0.5" y2="6" stroke="#4A2C2A" stroke-width="0.3"/>
+    <line x1="0.5" y1="-12" x2="0.5" y2="6" stroke="#4A2C2A" stroke-width="0.3"/>
+    <!-- Canvas sail -->
+    <polygon points="0,-12 -7,-6 7,-6" fill="#F5F5DC" stroke="#E5E5B8" stroke-width="0.5"/>
+    <!-- Sail details -->
+    <line x1="-4" y1="-9" x2="4" y2="-9" stroke="#D3D3D3" stroke-width="0.3"/>
+    <!-- Oak reinforcement strips -->
+    <rect x="-8" y="18" width="16" height="2" fill="#654321"/>
+    <rect x="-6" y="21" width="12" height="1" fill="#5D4037"/>
+  </g>
+  
+  <!-- Northeast -->
+  <g transform="translate(150, 100) rotate(45)">
+    <ellipse cx="0" cy="15" rx="13" ry="26" fill="url(#darkOak)" stroke="#3E2723" stroke-width="1"/>
+    <ellipse cx="0" cy="12" rx="9" ry="20" fill="url(#oakWood)"/>
+    <ellipse cx="0" cy="10" rx="6" ry="15" fill="url(#lightOak)"/>
+    <rect x="-1.5" y="-12" width="3" height="18" fill="#654321"/>
+    <line x1="-0.5" y1="-12" x2="-0.5" y2="6" stroke="#4A2C2A" stroke-width="0.3"/>
+    <line x1="0.5" y1="-12" x2="0.5" y2="6" stroke="#4A2C2A" stroke-width="0.3"/>
+    <polygon points="0,-12 -7,-6 7,-6" fill="#F5F5DC" stroke="#E5E5B8" stroke-width="0.5"/>
+    <line x1="-4" y1="-9" x2="4" y2="-9" stroke="#D3D3D3" stroke-width="0.3"/>
+    <rect x="-8" y="18" width="16" height="2" fill="#654321"/>
+    <rect x="-6" y="21" width="12" height="1" fill="#5D4037"/>
+  </g>
+  
+  <!-- East (pointing right) -->
+  <g transform="translate(250, 100) rotate(90)">
+    <ellipse cx="0" cy="15" rx="13" ry="26" fill="url(#darkOak)" stroke="#3E2723" stroke-width="1"/>
+    <ellipse cx="0" cy="12" rx="9" ry="20" fill="url(#oakWood)"/>
+    <ellipse cx="0" cy="10" rx="6" ry="15" fill="url(#lightOak)"/>
+    <rect x="-1.5" y="-12" width="3" height="18" fill="#654321"/>
+    <line x1="-0.5" y1="-12" x2="-0.5" y2="6" stroke="#4A2C2A" stroke-width="0.3"/>
+    <line x1="0.5" y1="-12" x2="0.5" y2="6" stroke="#4A2C2A" stroke-width="0.3"/>
+    <polygon points="0,-12 -7,-6 7,-6" fill="#F5F5DC" stroke="#E5E5B8" stroke-width="0.5"/>
+    <line x1="-4" y1="-9" x2="4" y2="-9" stroke="#D3D3D3" stroke-width="0.3"/>
+    <rect x="-8" y="18" width="16" height="2" fill="#654321"/>
+    <rect x="-6" y="21" width="12" height="1" fill="#5D4037"/>
+  </g>
+  
+  <!-- Southeast -->
+  <g transform="translate(350, 100) rotate(135)">
+    <ellipse cx="0" cy="15" rx="13" ry="26" fill="url(#darkOak)" stroke="#3E2723" stroke-width="1"/>
+    <ellipse cx="0" cy="12" rx="9" ry="20" fill="url(#oakWood)"/>
+    <ellipse cx="0" cy="10" rx="6" ry="15" fill="url(#lightOak)"/>
+    <rect x="-1.5" y="-12" width="3" height="18" fill="#654321"/>
+    <line x1="-0.5" y1="-12" x2="-0.5" y2="6" stroke="#4A2C2A" stroke-width="0.3"/>
+    <line x1="0.5" y1="-12" x2="0.5" y2="6" stroke="#4A2C2A" stroke-width="0.3"/>
+    <polygon points="0,-12 -7,-6 7,-6" fill="#F5F5DC" stroke="#E5E5B8" stroke-width="0.5"/>
+    <line x1="-4" y1="-9" x2="4" y2="-9" stroke="#D3D3D3" stroke-width="0.3"/>
+    <rect x="-8" y="18" width="16" height="2" fill="#654321"/>
+    <rect x="-6" y="21" width="12" height="1" fill="#5D4037"/>
+  </g>
+  
+  <!-- South (pointing down) -->
+  <g transform="translate(50, 300) rotate(180)">
+    <ellipse cx="0" cy="15" rx="13" ry="26" fill="url(#darkOak)" stroke="#3E2723" stroke-width="1"/>
+    <ellipse cx="0" cy="12" rx="9" ry="20" fill="url(#oakWood)"/>
+    <ellipse cx="0" cy="10" rx="6" ry="15" fill="url(#lightOak)"/>
+    <rect x="-1.5" y="-12" width="3" height="18" fill="#654321"/>
+    <line x1="-0.5" y1="-12" x2="-0.5" y2="6" stroke="#4A2C2A" stroke-width="0.3"/>
+    <line x1="0.5" y1="-12" x2="0.5" y2="6" stroke="#4A2C2A" stroke-width="0.3"/>
+    <polygon points="0,-12 -7,-6 7,-6" fill="#F5F5DC" stroke="#E5E5B8" stroke-width="0.5"/>
+    <line x1="-4" y1="-9" x2="4" y2="-9" stroke="#D3D3D3" stroke-width="0.3"/>
+    <rect x="-8" y="18" width="16" height="2" fill="#654321"/>
+    <rect x="-6" y="21" width="12" height="1" fill="#5D4037"/>
+  </g>
+  
+  <!-- Southwest -->
+  <g transform="translate(150, 300) rotate(225)">
+    <ellipse cx="0" cy="15" rx="13" ry="26" fill="url(#darkOak)" stroke="#3E2723" stroke-width="1"/>
+    <ellipse cx="0" cy="12" rx="9" ry="20" fill="url(#oakWood)"/>
+    <ellipse cx="0" cy="10" rx="6" ry="15" fill="url(#lightOak)"/>
+    <rect x="-1.5" y="-12" width="3" height="18" fill="#654321"/>
+    <line x1="-0.5" y1="-12" x2="-0.5" y2="6" stroke="#4A2C2A" stroke-width="0.3"/>
+    <line x1="0.5" y1="-12" x2="0.5" y2="6" stroke="#4A2C2A" stroke-width="0.3"/>
+    <polygon points="0,-12 -7,-6 7,-6" fill="#F5F5DC" stroke="#E5E5B8" stroke-width="0.5"/>
+    <line x1="-4" y1="-9" x2="4" y2="-9" stroke="#D3D3D3" stroke-width="0.3"/>
+    <rect x="-8" y="18" width="16" height="2" fill="#654321"/>
+    <rect x="-6" y="21" width="12" height="1" fill="#5D4037"/>
+  </g>
+  
+  <!-- West (pointing left) -->
+  <g transform="translate(250, 300) rotate(270)">
+    <ellipse cx="0" cy="15" rx="13" ry="26" fill="url(#darkOak)" stroke="#3E2723" stroke-width="1"/>
+    <ellipse cx="0" cy="12" rx="9" ry="20" fill="url(#oakWood)"/>
+    <ellipse cx="0" cy="10" rx="6" ry="15" fill="url(#lightOak)"/>
+    <rect x="-1.5" y="-12" width="3" height="18" fill="#654321"/>
+    <line x1="-0.5" y1="-12" x2="-0.5" y2="6" stroke="#4A2C2A" stroke-width="0.3"/>
+    <line x1="0.5" y1="-12" x2="0.5" y2="6" stroke="#4A2C2A" stroke-width="0.3"/>
+    <polygon points="0,-12 -7,-6 7,-6" fill="#F5F5DC" stroke="#E5E5B8" stroke-width="0.5"/>
+    <line x1="-4" y1="-9" x2="4" y2="-9" stroke="#D3D3D3" stroke-width="0.3"/>
+    <rect x="-8" y="18" width="16" height="2" fill="#654321"/>
+    <rect x="-6" y="21" width="12" height="1" fill="#5D4037"/>
+  </g>
+  
+  <!-- Northwest -->
+  <g transform="translate(350, 300) rotate(315)">
+    <ellipse cx="0" cy="15" rx="13" ry="26" fill="url(#darkOak)" stroke="#3E2723" stroke-width="1"/>
+    <ellipse cx="0" cy="12" rx="9" ry="20" fill="url(#oakWood)"/>
+    <ellipse cx="0" cy="10" rx="6" ry="15" fill="url(#lightOak)"/>
+    <rect x="-1.5" y="-12" width="3" height="18" fill="#654321"/>
+    <line x1="-0.5" y1="-12" x2="-0.5" y2="6" stroke="#4A2C2A" stroke-width="0.3"/>
+    <line x1="0.5" y1="-12" x2="0.5" y2="6" stroke="#4A2C2A" stroke-width="0.3"/>
+    <polygon points="0,-12 -7,-6 7,-6" fill="#F5F5DC" stroke="#E5E5B8" stroke-width="0.5"/>
+    <line x1="-4" y1="-9" x2="4" y2="-9" stroke="#D3D3D3" stroke-width="0.3"/>
+    <rect x="-8" y="18" width="16" height="2" fill="#654321"/>
+    <rect x="-6" y="21" width="12" height="1" fill="#5D4037"/>
+  </g>
+  
+  <!-- Oak Boat Variations -->
+  <text x="500" y="30" fill="#7a8a9a" text-anchor="middle" font-family="Arial, sans-serif" font-size="12">Oak Boat Variations</text>
+  
+  <!-- Detailed oak rowboat -->
+  <g transform="translate(500, 100)">
+    <ellipse cx="0" cy="20" rx="18" ry="35" fill="url(#darkOak)" stroke="#3E2723" stroke-width="1.5"/>
+    <ellipse cx="0" cy="15" rx="14" ry="28" fill="url(#oakWood)"/>
+    <ellipse cx="0" cy="10" rx="10" ry="20" fill="url(#lightOak)"/>
+    <!-- Oak seats -->
+    <rect x="-12" y="0" width="24" height="3" fill="#654321" rx="1"/>
+    <rect x="-10" y="10" width="20" height="3" fill="#654321" rx="1"/>
+    <rect x="-8" y="20" width="16" height="3" fill="#654321" rx="1"/>
+    <!-- Oak mast thicker -->
+    <rect x="-2" y="-18" width="4" height="25" fill="#654321"/>
+    <line x1="-1" y1="-18" x2="-1" y2="7" stroke="#4A2C2A" stroke-width="0.4"/>
+    <line x1="1" y1="-18" x2="1" y2="7" stroke="#4A2C2A" stroke-width="0.4"/>
+    <!-- Large canvas sail -->
+    <polygon points="0,-18 -12,-8 12,-8" fill="#F5F5DC" stroke="#E5E5B8" stroke-width="0.8"/>
+    <line x1="-6" y1="-13" x2="6" y2="-13" stroke="#D3D3D3" stroke-width="0.4"/>
+    <line x1="-8" y1="-10" x2="8" y2="-10" stroke="#D3D3D3" stroke-width="0.4"/>
+  </g>
+  
+  <!-- Oak fishing boat -->
+  <g transform="translate(650, 100)">
+    <ellipse cx="0" cy="15" rx="22" ry="15" fill="url(#darkOak)" stroke="#3E2723" stroke-width="1"/>
+    <ellipse cx="0" cy="12" rx="18" ry="11" fill="url(#oakWood)"/>
+    <ellipse cx="0" cy="8" rx="14" ry="8" fill="url(#lightOak)"/>
+    <!-- Oak cabin -->
+    <rect x="-8" y="-5" width="16" height="12" fill="#654321" rx="2"/>
+    <rect x="-6" y="-3" width="12" height="8" fill="url(#oakWood)"/>
+    <!-- Cabin details -->
+    <rect x="-4" y="-1" width="3" height="4" fill="#4A2C2A"/>
+    <rect x="1" y="-1" width="3" height="4" fill="#4A2C2A"/>
+    <!-- Mast -->
+    <rect x="-1" y="-12" width="2" height="10" fill="#654321"/>
+    <!-- Small sail -->
+    <polygon points="0,-12 -6,-7 6,-7" fill="#F5F5DC" stroke="#E5E5B8"/>
+  </g>
+  
+  <!-- Usage instructions -->
+  <text x="50" y="370" fill="#8B7355" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Handcrafted Oak Boats - Traditional Maritime Craftsmanship</text>
+  <text x="50" y="385" fill="#7a8a9a" font-family="Arial, sans-serif" font-size="10">Features: Authentic oak wood grain patterns, reinforced hull construction, canvas sails</text>
+  <text x="50" y="395" fill="#7a8a9a" font-family="Arial, sans-serif" font-size="10">Materials: Dark oak hull, medium oak interior, light oak detailing, natural canvas sails</text>
+</svg>
